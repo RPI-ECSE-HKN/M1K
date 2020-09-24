@@ -53,6 +53,7 @@ CSV file can be located at the location here: `.\data\part-a\Vin_Vr.csv`
 ### Code to Generate the Current vs. Time Plot
 
 ![Ir_vs_t](./images/parta/Ir_vs_t.jpg)
+
 ![matlab_plotting_data](./images/parta/matlab_plotting_data.jpg)
 
 ```matlab
@@ -94,6 +95,7 @@ CSV file can be located at the location here: `.\data\part-b\Vin_Vc.csv`
 ### Code to Generate the Vc vs. Time Plot
 
 ![Vc_vs_t](./images/partb/Vc_vs_t.jpg)
+
 ![matlab_plotting_data](./images/partb/matlab_plotting_data.jpg)
 
 ```matlab
