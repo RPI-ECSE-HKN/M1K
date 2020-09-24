@@ -102,8 +102,7 @@ CSV file can be located at the location here: `.\data\part-b\Vin_Vc.csv`
 % Organize data
 Array=readtable('vin_vc.csv');
 time = Array{:, 1};
-CHA_V = Array{:, 2};
-CHB_V = Array{:, 4};
+CHB_V = Array{:, 4}; % Vc data on column 4
 
 figure()
 plot(time, CHB_V)
