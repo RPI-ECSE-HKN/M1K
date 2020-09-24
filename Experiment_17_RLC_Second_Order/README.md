@@ -72,3 +72,40 @@ xlim([0 0.001]);
 ```
 
 ## Experiment 2 Setup
+### Hardware Diagram
+
+![M1K_Board_Setup](./images/partb/M1K_Board_Setup.jpg)
+
+![Protoboard-Board-Setup](./images/partb/Protoboard-Board-Setup.jpg)
+
+### Software Diagram
+
+![awg_controller](./images/partb/awg_controller.jpg)
+
+![Oscilloscope_Vc](./images/partb/Oscilloscope_Vc.jpg)
+
+The orange plot is the Vc, voltage of the capacitor
+
+
+Configuration file can be located at the location here: `.\data\part-b\config.cfg`
+
+CSV file can be located at the location here: `.\data\part-b\Vin_Vc.csv`
+
+### Code to Generate the Vc vs. Time Plot
+
+![Vc_vs_t](./images/partb/Vc_vs_t.jpg)
+![matlab_plotting_data](./images/partb/matlab_plotting_data.jpg)
+
+```matlab
+% Organize data
+Array=readtable('vin_vc.csv');
+time = Array{:, 1};
+CHA_V = Array{:, 2};
+CHB_V = Array{:, 4};
+
+figure()
+plot(time, CHB_V)
+title("Voltage of C vs. Time");
+xlabel('time(s)');
+ylabel('voltage(V)');
+```
